@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Maomay Sewing Machines</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Maomay Sewing Machines Logo" class="logo">
+            <h1>Maomay Sewing Machines</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Content -->
+    <main class="cart-page">
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+            <p class="empty-cart-message">Your cart is empty</p>
+        </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-details">
+                <p>Subtotal: <span id="subtotal">₦0</span></p>
+               
+                <p class="total">Total: <span id="total">₦2,500</span></p>
+            </div>
+            <button id="checkout-btn" class="btn">Order Now</button>
+        </div>
+    </main>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2348029728552" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="https://web.facebook.com/maomaysewingmachines" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/maomay_sewingmachines" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 129 Abioye Gbadamusi Street, Musibau Bus Stop, Ago Palace, Lagos, Nigeria</p>
+                <p><i class="fas fa-phone"></i> 08029728552</p>
+                
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="cart.html">Your Cart</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Maomay Sewing Machines. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
