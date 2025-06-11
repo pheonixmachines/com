@@ -161,7 +161,7 @@ function proceedToCheckout() {
         return;
     }
     
-    let message = 'Hello Maomay Sewing Machines,\n\nI would like to order the following items:\n\n';
+    let message = 'Hello Craine Machines,\n\nI would like to order the following items:\n\n';
     let total = 0;
     
     cart.forEach(item => {
@@ -173,7 +173,7 @@ function proceedToCheckout() {
     message += `\nTotal: ₦${total.toLocaleString()}\n\nPlease let me know the next steps. Thank you!`;
     
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/2348029728552?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/2347030887782?text=${encodedMessage}`, '_blank');
 }
 
 // Notification
