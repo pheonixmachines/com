@@ -209,3 +209,43 @@ function performSearch() {
         }
     });
 }
+
+// Product specifications functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click event listeners to About buttons
+    document.querySelectorAll('.about-product').forEach(button => {
+        button.addEventListener('click', function() {
+            const specs = this.getAttribute('data-specs');
+            showSpecifications(specs);
+        });
+    });
+});
+
+function showSpecifications(specs) {
+    // Create modal for specifications
+    const modal = document.createElement('div');
+    modal.className = 'specs-modal';
+    modal.innerHTML = `
+        <div class="specs-content">
+            <span class="close-specs">&times;</span>
+            <h3>Product Specifications</h3>
+            <p>${specs}</p>
+        </div>
+    `;
+
+    // Add modal to body
+    document.body.appendChild(modal);
+
+    // Close button functionality
+    const closeBtn = modal.querySelector('.close-specs');
+    closeBtn.onclick = function() {
+        modal.remove();
+    }
+
+    // Close on outside click
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.remove();
+        }
+    }
+}
