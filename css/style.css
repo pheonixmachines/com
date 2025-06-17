@@ -65,7 +65,7 @@ header {
 }
 
 .logo {
-    height: 80px;
+    height: 50px;
     width: auto;
 }
 
@@ -178,7 +178,7 @@ nav ul li a:hover {
 .product-card img {
     width: 120%;
     height: 580px;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 1rem;
 }
 
