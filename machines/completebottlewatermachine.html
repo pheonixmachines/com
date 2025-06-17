@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Bottle Water Production Machines in Lagos - Nigeria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.jpg" alt="Craine machines Logo" class="logo">
+            <h1>Craine Machines</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="../images/3da7e10b-e7ff-4163-a563-90d7f963fed9.jpg" alt="Complete Bottle Water Production Machines" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="../images/3da7e10b-e7ff-4163-a563-90d7f963fed9.jpg" alt="Complete Bottle Water Production Machines" class="thumbnail active">
+                        <img src="../images/CompleteBottleWaterProductionMachines.jpg" alt="Complete Bottle Water Production Machines" class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 id="product-title">Complete Bottle Water Production Machines</h1>
+                    <p class="price" id="product-price">₦58,000,000</p>
+                    <div class="product-specs">
+                        <h3>Specifications:</h3>
+                        Model : Model XGF8-8-3 Automatic Bottle Washing, Filling, Capping Monoblock With Free Spare Parts Toolbox And Accessories.<br>
+                Capacity : 3,000 Bottles Per Hr, HZ880 2 Cavity Pet Bottle Blowing Machine Blower, Heater and Air Compressor With Free Spare Parts Toolbox And Accessories<br>               
+                Capacity: 1,000 Bottles Per Hr, BZJ5038/BSE5038 Sleeve Wrapper With Shrink Tunnel And Air Compressor (2HP) With Free Spare Parts Toolbox And Accessories.<br> 
+                Capacity: 6 Packs Per Min, RO-2000 Reverse Osmosis Water Filtration Machine With 8 Membrane (Nitto).<br>                
+                Capacity: 2,000 Litres Per Hr, Filtran 6G water treatment Ozonator With Accessories.<br>
+                Capacity: 6 Grams Per Hr, DZBS1135A Steam Boiler With Shrink Labeling Tunnel.  Power 9kw, Batch Expiry Date Coding Machine HP241, Industrial Water Filtration Stainless Cylinder With Water Treatment Chemicals (Pair). <br>
+                Capacity: 3,000 Litres Per Hr, ZXZY Industrial Ultraviolet Water Sterilizer. <br>
+                Capacity: 3,000 Litres Per Hr, Filtran 20 Inches Micro Filter Housing With Filter Cartridge 0.5 micron, 1 micron, 5 micron and Carbon Cartridge, Size: 20 Inches, Pallet Truck Forklift Jack. <br>
+                Capacity: 2,000 Kg Stainless Water Pump. Size 1hp  Cavity Pet Bottle Mould. Size: 500ml (50cl) and 750ml (75cl) Stainless Water Pump. Size: 2HP Air Ultraviolet sterilizer (for Packing Store). <br>
+                 
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 07034293609 Call for more info</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2347030887782" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="https://web.facebook.com/crainmachines" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/crainemachines" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Along International Tradefair Market, Lagos, Nigeria</p>
+                <p><i class="fas fa-phone"></i> 07034293609</p>
+                
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="cart.html">Your Cart</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Craine Machines. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainImage = document.getElementById('main-product-image');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+    
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Update main image
+                mainImage.src = this.src;
+                
+                // Update active state
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    });
+    </script>
+
+    </body>
+</html>
