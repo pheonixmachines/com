@@ -330,8 +330,51 @@ nav ul li a:hover {
 .cart-items {
     flex: 2;
     min-width: 300px;
+    width: 100%;
 }
 
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.cart-item-details {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .cart-item {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .cart-item img {
+        width: 380px;
+        height: 380px;
+    }
+
+    .cart-item-details {
+        text-align: left;
+    }
+}
 .cart-summary {
     flex: 1;
     background: white;
