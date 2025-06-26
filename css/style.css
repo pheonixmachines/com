@@ -966,6 +966,32 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    .product-detail-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-images {
+        width: 100%;
+        order: 1;
+    }
+
+    .product-info {
+        width: 100%;
+        order: 2;
+        padding-top: 20px;
+    }
+
+    .main-image {
+        height: 300px;
+    }
+
+    .thumbnail-images {
+        justify-content: center;
+        margin-top: 10px;
+    }
 }
 .sr-only {
     position: absolute;
