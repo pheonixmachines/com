@@ -1,5 +1,24 @@
 // Slideshow functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger Menu
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+
     // Banner Slideshow
     const slides = document.querySelectorAll('.banner-slideshow img');
     let currentSlide = 0;
@@ -195,6 +214,8 @@ function showNotification(message) {
     }, 3000);
 }
 
+
+
 // Search functionality
 function performSearch() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
@@ -249,11 +270,3 @@ function showSpecifications(specs) {
         }
     }
 }
-
-// Hamburger Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
