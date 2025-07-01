@@ -92,8 +92,12 @@ nav ul {
     }
 }
 .logo-container h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-weight: 900;
     white-space: nowrap;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .logo-container p {
@@ -108,7 +112,8 @@ nav ul {
     }
     
     .logo-container h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        font-weight: 900;
     }
     
     .logo-container p {
@@ -589,7 +594,8 @@ footer {
     }
 
     .logo-container h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        font-weight: 900;
     }
 }
 
