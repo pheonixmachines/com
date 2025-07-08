@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batch Coding Machine in Nigerina - Lagos</title>
+    <title>Pure Water Production Machines Complete Setup In Lagos - Nigeria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/logo.jpg" type="image/png">
@@ -33,20 +33,28 @@
             <div class="product-detail-container">
                 <div class="product-images">
                     <div class="main-image">
-                        <img src="../images/DateCodingMachinebig.jpg" alt="Batch Coding Machine" id="main-product-image">
+                        <img src="../images/Purewatercompletemachine.jpg" alt="Pure Water Production Machines Complete Setup" id="main-product-image">
                     </div>
                     <div class="thumbnail-images">
-                        <img src="../images/DateCodingMachinebig.jpg" alt="Batch Coding Machine" class="thumbnail active">
-                        <img src="../images/Date-coding-machine.jpg" alt="Batch Coding Machine" class="thumbnail">
+                        <img src="../images/PureWatercomplete2.jpg" alt="Pure Water Production Machines Complete Setup" class="thumbnail active">
+                        <img src="../images/purewatercomplete3.jpg" alt="Pure Water Production Machines Complete Setup" class="thumbnail">
+                        <img src="../images/Purewatercompletemachine.jpg" alt="Pure Water Production Machines Complete Setup" class="thumbnail">
+                        <img src="../images/jetpump.jpg" alt="Pure Water Production Machines Complete Setup" class="thumbnail">
                     </div>
                 </div>
                 <div class="product-info">
-                    <h1 id="product-title">Batch Coding Machine</h1>
-                    <p class="price" id="product-price">₦150,000</p>
+                    <h1 id="product-title">Pure Water Production Machines Complete Setup</h1>
+                    <p class="price" id="product-price">₦5,700,000</p>
                     <div class="product-specs">
                         <h3>Specifications:</h3>
-                        Model: HP241<br>
-                Printing Speed: 20-70 times/min
+                        Complete set of machines for pure water production.
+                AS1000 Dingli Pure Water Packaging Machine<br>
+                Water treatment filtration tanks imported with treatment chemicals<br>
+                Micro filter housing with filter cartridge 4 sets<br>
+                Ultraviolet water steriliser 1 set<br>
+                Air ultraviolet steriliser 2pcs<br>
+                Stainless pump 1hp 1 set<br>                
+                1.5hp stainless pump 1 set
                     </div>
                     <div class="contact-info">
                         <p><i class="fas fa-phone"></i> 07034293609 Call for more info</p>
@@ -102,6 +110,22 @@
                 thumbnails.forEach(thumb => thumb.classList.remove('active'));
                 this.classList.add('active');
             });
+        });
+    // Hamburger menu handling
+    const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
         });
     });
     </script>
