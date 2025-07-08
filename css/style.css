@@ -104,7 +104,7 @@ nav ul {
     gap: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
         padding: 0.5rem;
         flex-wrap: wrap;
@@ -120,7 +120,7 @@ nav ul {
     }
 
     .logo {
-        height: 60px;
+        height: 35px;
         width: auto;
         margin-right: 12px;
     }
@@ -196,6 +196,13 @@ nav ul {
         display: block;
         padding: 10px;
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 35px;
+        width: auto;
     }
 }
 
@@ -1503,5 +1510,19 @@ nav ul li a.active {
 
     .cta-buttons {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 35px;
+        width: auto;
     }
 }
