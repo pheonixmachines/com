@@ -120,8 +120,8 @@ nav ul {
     }
 
     .logo {
-        height: 120px;
-        width: 20px;
+        height: 80px;
+        width: auto;
         margin-right: 12px;
     }
 
